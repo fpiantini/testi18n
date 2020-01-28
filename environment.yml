@@ -1,0 +1,4 @@
+name: testi18n
+dependencies:
+- python=3
+- babel
