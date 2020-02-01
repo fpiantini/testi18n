@@ -23,9 +23,10 @@ python setup.py extract_messages
 - Prepare the portable object for a new language starting from template:
 
 ```
-python ./setup.py init_catalog --locale <language>
+python setup.py init_catalog --locale <language>
 ```
 
+- Edit the portable object file `testi18n/locale/<language>/messages.po` completing the empty or fuzzy `msgstr` fields.
 - Compile the portable object files:
 
    - Single language:
@@ -67,7 +68,7 @@ python setup.py extract_messages
 After this the existing portable object files can be updated using the update command:
 
 ```bash
-python ./setup.py update_catalog
+python setup.py update_catalog
 ```
 
 After this the `po` files shall be updated to translate the new strings (fuzzy translations are provided).
